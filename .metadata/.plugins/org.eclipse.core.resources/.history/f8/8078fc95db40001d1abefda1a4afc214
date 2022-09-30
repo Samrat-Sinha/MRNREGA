@@ -1,0 +1,13 @@
+package com.masai.exceptions;
+
+public class BDOExceprion extends Exception{
+
+	public BDOException(){	
+		}
+	
+	public BDOException(String msg) {
+    super(msg);		
+	}
+	
+	
+}
