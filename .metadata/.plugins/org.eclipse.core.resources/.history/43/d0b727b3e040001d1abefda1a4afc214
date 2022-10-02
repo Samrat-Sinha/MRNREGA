@@ -1,0 +1,5 @@
+package com.masai.deo;
+
+public interface BDO_Deo {
+
+}
