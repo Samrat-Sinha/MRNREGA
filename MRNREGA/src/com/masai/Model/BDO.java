@@ -2,25 +2,45 @@ package com.masai.Model;
 
 public class BDO {
 
-	private String username;
+	private Integer bdoId;
+	private String name;
+	private String email;
 	private String password;
 	
 	public BDO() {
-		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-	public BDO(String username, String password) {
+
+	public BDO(Integer bdoId, String name, String email, String password) {
 		super();
-		this.username = username;
+		this.bdoId = bdoId;
+		this.name = name;
+		this.email = email;
 		this.password = password;
 	}
 
-	public String getUsername() {
-		return username;
+	public Integer getBdoId() {
+		return bdoId;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setBdoId(Integer bdoId) {
+		this.bdoId = bdoId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
@@ -31,10 +51,8 @@ public class BDO {
 		this.password = password;
 	}
 
-	@Override
-	public String toString() {
-		return "BDO_Beam [username=" + username + ", password=" + password + "]";
-	}
+	
+	
 	
 	
 }
