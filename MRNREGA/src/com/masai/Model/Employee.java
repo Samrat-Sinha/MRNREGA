@@ -2,22 +2,27 @@ package com.masai.Model;
 
 public class Employee {
 
+
 	private int empId;
-	private String empName;
-	private String address;
-	
-	 
+	private String name;
+	private String skill;
+	private int wages;
 	
 	public Employee() {
-		super();
+		
 	}
+
 	
-	public Employee(int empId, String empName, String address) {
+
+	public Employee(int empId, String name, String skill, int wages) {
 		super();
 		this.empId = empId;
-		this.empName = empName;
-		this.address = address;
+		this.name = name;
+		this.skill = skill;
+		this.wages = wages;
 	}
+
+
 
 	public int getEmpId() {
 		return empId;
@@ -27,27 +32,43 @@ public class Employee {
 		this.empId = empId;
 	}
 
-	public String getEmpName() {
-		return empName;
+	public String getName() {
+		return name;
 	}
 
-	public void setEmpName(String empName) {
-		this.empName = empName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getSkill() {
+		return skill;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setSkill(String skill) {
+		this.skill = skill;
 	}
+
+
+
+	public int getWages() {
+		return wages;
+	}
+
+
+
+	public void setWages(int wages) {
+		this.wages = wages;
+	}
+
+
 
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", address=" + address + "]";
+		return "Employee [empId=" + empId + ", name=" + name + ", skill=" + skill + ", wages=" + wages + "]";
 	}
-   
+
+	
+
 	
 	
 	
