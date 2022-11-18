@@ -3,10 +3,10 @@ package com.masai.deo;
 
 import java.util.List;
 
-import com.masai.beam.BDO;
-import com.masai.beam.Employee;
-import com.masai.beam.GPM;
-import com.masai.beam.Project;
+import com.masai.Model.BDO;
+import com.masai.Model.Employee;
+import com.masai.Model.GPM;
+import com.masai.Model.Project;
 import com.masai.exceptions.BDOException;
 import com.masai.exceptions.EmployeeException;
 import com.masai.exceptions.GPMException;

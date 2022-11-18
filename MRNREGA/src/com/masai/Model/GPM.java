@@ -1,4 +1,4 @@
-package com.masai.beam;
+package com.masai.Model;
 
 public class GPM {
 
