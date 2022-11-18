@@ -4,23 +4,20 @@ package com.masai.Model;
 public class Project {
 
 	private int projectId;
-	private String projectDesc;
-	private String projectDist;
-	private String projectVillage;
-	//private LocalDate projectDate;
+	private String projectName;
+	private String projectWorkDetail;
+	private String projectWorkLocation;
 	
 	public Project() {
-		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public Project(int projectId, String projectDesc, String projectDist, String projectVillage
-			) {
+	public Project(int projectId, String projectName, String projectWorkDetail, String projectWorkLocation) {
 		super();
 		this.projectId = projectId;
-		this.projectDesc = projectDesc;
-		this.projectDist = projectDist;
-		this.projectVillage = projectVillage;
-		//this.projectDate = projectDate;
+		this.projectName = projectName;
+		this.projectWorkDetail = projectWorkDetail;
+		this.projectWorkLocation = projectWorkLocation;
 	}
 
 	public int getProjectId() {
@@ -31,43 +28,37 @@ public class Project {
 		this.projectId = projectId;
 	}
 
-	public String getProjectDesc() {
-		return projectDesc;
+	public String getProjectName() {
+		return projectName;
 	}
 
-	public void setProjectDesc(String projectDesc) {
-		this.projectDesc = projectDesc;
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
 	}
 
-	public String getProjectDist() {
-		return projectDist;
+	public String getProjectWorkDetail() {
+		return projectWorkDetail;
 	}
 
-	public void setProjectDist(String projectDist) {
-		this.projectDist = projectDist;
+	public void setProjectWorkDetail(String projectWorkDetail) {
+		this.projectWorkDetail = projectWorkDetail;
 	}
 
-	public String getProjectVillage() {
-		return projectVillage;
+	public String getProjectWorkLocation() {
+		return projectWorkLocation;
 	}
 
-	public void setProjectVillage(String projectVillage) {
-		this.projectVillage = projectVillage;
+	public void setProjectWorkLocation(String projectWorkLocation) {
+		this.projectWorkLocation = projectWorkLocation;
 	}
-
-//	public LocalDate getProjectDate() {
-//		return projectDate;
-//	}
-//
-//	public void setProjectDate(LocalDate projectDate) {
-//		this.projectDate = projectDate;
-//	}
 
 	@Override
 	public String toString() {
-		return "CreateProject [projectId=" + projectId + ", projectDesc=" + projectDesc + ", projectDist=" + projectDist
-				+ ", projectVillage=" + projectVillage + "]";
+		return "Project [projectId=" + projectId + ", projectName=" + projectName + ", projectWorkDetail="
+				+ projectWorkDetail + ", projectWorkLocation=" + projectWorkLocation + "]";
 	}
+
+	
 	
 	
 	
