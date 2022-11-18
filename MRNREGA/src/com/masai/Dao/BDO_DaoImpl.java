@@ -1,4 +1,4 @@
-package com.masai.deo;
+package com.masai.Dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,7 +17,7 @@ import com.masai.exceptions.GPMException;
 import com.masai.utility.DBUtil;
 
 
-public class BDO_DaoImpl implements BDO_Deo{
+public class BDO_DaoImpl implements BDODao{
 
 	@Override
 	public BDO loginBDO(String username, String password) throws BDOException {

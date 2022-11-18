@@ -1,4 +1,4 @@
-package com.masai.deo;
+package com.masai.Dao;
 
 
 import java.util.List;
@@ -11,7 +11,7 @@ import com.masai.exceptions.BDOException;
 import com.masai.exceptions.EmployeeException;
 import com.masai.exceptions.GPMException;
 
-public interface BDO_Deo {
+public interface BDODao {
 	
 	public BDO loginBDO(String username,String password)throws BDOException;
    
