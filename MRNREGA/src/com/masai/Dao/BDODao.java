@@ -10,26 +10,21 @@ import com.masai.Model.Project;
 import com.masai.exceptions.BDOException;
 import com.masai.exceptions.EmployeeException;
 import com.masai.exceptions.GPMException;
+import com.masai.exceptions.ProjectException;
 
 public interface BDODao {
 	
-	public BDO loginBDO(String username,String password)throws BDOException;
-   
-	public String CreateProject(Project project);
+public String registerAsBDO(BDO bdo);
 	
-	public List<Project> getAllProjectDetails()throws BDOException;
+	public String loginAsBDO(String email,String password);
 	
-	public String CreateGPM(GPM gpm);
+	public String createProject(Project project);
 	
-	public List<GPM> getAllGpmDetails()throws BDOException;
+	public List<Project> getAllProject()throws BDOException;
 	
-	public String AlocateGpmtoProject(int gpmId,int projectId)throws BDOException,GPMException;
+	public String registerGPMbyBDO(GPM gpm);
 	
-	public GPM loginGpm(String gpmusername , String password)throws GPMException;
+	public List<GPM> getAllGPM();
 	
-	public String CreateEmployee(Employee employee);
-
-	public List<Employee> getAllEmpDetails()throws EmployeeException;
-	
-	public String AlocateEmptoProject(int empId,int projectId)throws BDOException,EmployeeException;
+	public String allocateGpmInsideProject(int gpmId,String gpmName,int projectId,String projectName)throws GPMException,ProjectException;
 }

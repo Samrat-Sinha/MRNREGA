@@ -3,8 +3,8 @@ package com.masai.frontend;
 import java.util.List;
 import java.util.Scanner;
 
-import com.masai.Dao.BDO_DaoImpl;
 import com.masai.Dao.BDODao;
+import com.masai.Dao.BDODaoImpl;
 import com.masai.Model.BDO;
 import com.masai.Model.Employee;
 import com.masai.Model.GPM;
@@ -18,7 +18,7 @@ public class MrnregaApp {
 	public static void selectoption() {
 		// TODO Auto-generated method stub
 		
-		BDODao bdodeo = new BDO_DaoImpl();
+		BDODao bdodeo = new BDODaoImpl();
 		try {
 			System.out.println("\nPlease select an option to continue");
 			System.out.println("\n1. BDO Login");
