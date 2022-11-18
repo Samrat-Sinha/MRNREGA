@@ -10,11 +10,11 @@ import java.util.List;
 import com.masai.Model.BDO;
 import com.masai.Model.GPM;
 import com.masai.Model.Project;
+import com.masai.Utility.DBUtil;
 import com.masai.exceptions.BDOException;
 import com.masai.exceptions.EmployeeException;
 import com.masai.exceptions.GPMException;
 import com.masai.exceptions.ProjectException;
-import com.masai.utility.DBUtil;
 
 
 public class BDODaoImpl implements BDODao{

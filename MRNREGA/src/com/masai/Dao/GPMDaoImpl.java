@@ -9,10 +9,10 @@ import java.util.List;
 
 import com.masai.Model.Employee;
 import com.masai.Model.EmployeeTotalWorkingDays;
+import com.masai.Utility.DBUtil;
 import com.masai.exceptions.EmployeeException;
 import com.masai.exceptions.GPMException;
 import com.masai.exceptions.ProjectException;
-import com.masai.utility.DBUtil;
 
 public class GPMDaoImpl implements GPMDao{
 	
