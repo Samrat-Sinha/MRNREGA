@@ -6,6 +6,7 @@ public class App {
 		
 		System.out.println(" - - - - - - - - - - - - - - Welcome to MRNREGA - - - - - - - - - - - - - - ");
 		MrnregaApp.selectoption();
+		System.out.println("");
 	}
 
 }
