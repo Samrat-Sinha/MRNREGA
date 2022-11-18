@@ -51,6 +51,10 @@ public class BDO {
 		this.password = password;
 	}
 
+	@Override
+	public String toString() {
+		return "BDO [bdoId=" + bdoId + ", name=" + name + ", email=" + email + ", password=" + password + "]";
+	}
 	
 	
 	
