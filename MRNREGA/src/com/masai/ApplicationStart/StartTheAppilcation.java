@@ -1,30 +1,28 @@
 package com.masai.ApplicationStart;
 
-
 import java.util.List;
 import java.util.Scanner;
-import com.masai.Exception.BDOException;
-import com.masai.Exception.EmployeeException;
-import com.masai.Exception.GPMException;
-import com.masai.Exception.ProjectException;
+
 import com.masai.Model.Employee;
 import com.masai.Model.EmployeeTotalWorkingDays;
 import com.masai.Model.GPM;
 import com.masai.Model.Project;
-import com.masai.UseCases.AllocateProjectToGPM;
-import com.masai.UseCases.AssignProjectToEmployee;
-import com.masai.UseCases.CreatingEmployeeByGPM;
-import com.masai.UseCases.CreatingGPM;
-import com.masai.UseCases.LoginBDO;
-import com.masai.UseCases.LoginGPM;
-import com.masai.UseCases.ProjectCreatedByBDO;
-import com.masai.UseCases.RegisterBDO;
-import com.masai.UseCases.ViewAllEmployeeOnProject;
-import com.masai.UseCases.ViewEmployeeWorkingDetails;
-import com.masai.UseCases.getAllEmployee;
-import com.masai.UseCases.getAllGPM;
-import com.masai.UseCases.getAllProjectOfBDO;
-
+import com.masai.exceptions.BDOException;
+import com.masai.exceptions.EmployeeException;
+import com.masai.exceptions.GPMException;
+import com.masai.exceptions.ProjectException;
+import com.masai.useCases.AssignProjectToEmployee;
+import com.masai.useCases.CreatingEmployeeByGPM;
+import com.masai.useCases.CreatingGPM;
+import com.masai.useCases.LoginBDO;
+import com.masai.useCases.LoginGPM;
+import com.masai.useCases.ProjectCreatedByBDO;
+import com.masai.useCases.RegisterBDO;
+import com.masai.useCases.ViewAllEmployeeOnProject;
+import com.masai.useCases.ViewEmployeeWorkingDetails;
+import com.masai.useCases.getAllEmployee;
+import com.masai.useCases.getAllGPM;
+import com.masai.useCases.getAllProjectOfBDO;
 
 public class StartTheAppilcation {
 
@@ -147,7 +145,7 @@ public static void main(String[] args){
 						if(innerbdochoice==5) {
 							String projToGpm;
 							try {
-								projToGpm = AllocateProjectToGPM.projectToGPM();
+								projToGpm = com.masai.useCases.AllocateProjectToGPM.projectToGPM();
 								
 								if(projToGpm!="GPM has not been Allocated to any Project") {
 									System.out.println();
